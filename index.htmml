@@ -1,0 +1,29 @@
+<!Doctype html>
+
+<html> <head> <title> My Website </title> </head>
+
+<body>
+<h1> Cloud Technology  </h1>
+<style>
+body {
+ "background-image: url('Cloud.jpg'); background-size: 100% ;"
+}
+</style>
+
+<p style="color:white;"> This is a website, which you can learn lot of things. </p>
+
+<br>
+
+
+<p style="color:blue;"> Pre-requasites for AWS </p>
+<ol>
+<li> Hardware and networking </li>
+<li> Win & Linux Administration </li>
+<li> VMware (Virtualization Concepts) </li>
+<li> Cloud Basics </li>
+</ol>
+
+<a href="https://aws.amazon.com"> AWS </a>
+
+</body>
+</html>
