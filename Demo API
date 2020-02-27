@@ -1,0 +1,48 @@
+{
+  "Version": "2012-10-17",
+  "Id": "default",
+  "Statement": [
+    {
+      "Sid": "7225d0e1-afa2-42ef-b122-42ba3f2432c6",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "apigateway.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-east-1:413069860847:function:DemoAPI",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:execute-api:us-east-1:413069860847:71b17dzi9j/*/POST/cart"
+        }
+      }
+    },
+    {
+      "Sid": "9a7182ae-7b3e-4427-baee-02f947069fed",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "apigateway.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-east-1:413069860847:function:DemoAPI",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:execute-api:us-east-1:413069860847:71b17dzi9j/*/GET/item"
+        }
+      }
+    },
+    {
+      "Sid": "528ed56b-a44c-4b07-aa80-f4bed101dda1",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "apigateway.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-east-1:413069860847:function:DemoAPI",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:execute-api:us-east-1:413069860847:71b17dzi9j/*/POST/cart"
+        }
+      }
+    }
+  ]
+}
